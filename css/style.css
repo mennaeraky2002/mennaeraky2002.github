@@ -1,0 +1,484 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+    
+}
+.header{
+  position: relative;
+    height: 80vh;
+     width: 100%;
+     background-image: url("../images/bg-pattern-intro-desktop.svg");
+     /* border: 9px solid red; */
+     background-repeat: no-repeat;
+     background-size:auto;
+     background-position: center;
+background-color: hsl(356, 100%, 66%);
+border-bottom-left-radius: 85px ;
+margin-bottom: 0px;
+    }
+.nav{
+     display: flex; 
+}
+.header .nav  .right-item{
+    width:50%;
+    padding-right: 100px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+.header .nav .right-item ul{
+    float: right;
+}
+
+.header .nav .right-item ul li{
+    list-style: none;
+    display: inline;
+    padding: 5px 15px;
+    padding-bottom: 8px;
+    margin: 15px 5px;
+    font-weight: 500;
+    font-family: cursive;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    border:1px solid transparent;
+    
+}
+.header .nav .right-item ul li a{
+    color: hsl(0, 0%, 100%,.7);
+    font-family: 'Overpass', sans-serif;
+    text-decoration: none;
+    padding: 25px 10px;
+}
+
+.header .nav .right-item ul li:hover , .header .nav .right-item ul .active{
+    background-color: rgba(255, 255, 255, .2);
+    border:1px solid transparent;
+    overflow: hidden !important;
+    margin-left: 5px;
+    
+}
+.header .master{
+    text-align: center;
+    color: hsl(0, 0%, 100%,.9);
+    font-family: 'Overpass', sans-serif;
+}
+.header .master h1{
+word-spacing: 0px;
+    font-weight: 500;
+    font-size: 65px;
+    padding-top: 48px;
+    letter-spacing: -2px;
+}
+
+.header .master p{
+    color: hsl(0, 0%, 100%,.7);
+    font-weight: 300;
+    padding-top: 5px;
+    word-spacing: 0px;
+    font-size: 20px;
+}
+
+.header .master .btn1{
+    color:hsl(356, 100%, 66%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border:1px solid transparent;
+    margin-top: 45px;
+    padding-top: 15px;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.header .master .btn2{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border:2px solid hsl(0, 0%, 100%,.4);
+    margin-top: 45px;
+    padding-top: 15px;
+    font-size: 17px;
+    background-color: hsl(356, 100%, 66%);
+}
+.header .master .btn1:hover{
+    color:hsl(0, 0%, 100%);
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border:2px solid hsl(0, 0%, 100%,.4);
+    background-color: hsl(356, 100%, 66%);
+    cursor: pointer;
+    margin-left: 5px;
+}
+.header .master .btn2:hover{
+    color:hsl(356, 100%, 66%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border:1px solid transparent;
+    margin-top: 45px;
+    padding-top: 15px;
+    font-size: 17px;
+    margin-right: 10px;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    
+
+}.header .nav .left-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding-top: 75px;
+    width: 50%;
+    
+}
+.header .nav .left-item div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: -15px;
+color: hsl(0, 0%, 100%,.9);
+font-family: 'Overpass', sans-serif;
+font-weight: 600;
+}
+
+.left-item div h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: -15px;
+    margin-left: 130px;
+}
+.left-item div h4{
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.left-item .sec{
+    padding-left: -50px;
+margin-left: 50px;
+padding-right: 30px;
+}
+.left-item .forth{   
+        padding-right: 335px;
+        margin-left: -45px;
+    } 
+    .left-item .third{
+        padding-right: 105px;
+        padding-left: 0px;
+        margin-left: 30px;
+    }
+    .left-item div a{
+    font-family: 'Overpass', sans-serif;
+     color: hsl(0, 0%, 100%,.6);
+     text-decoration: none;
+     font-size: 15px;
+    }
+ 
+.left-item div:hover {
+    cursor: pointer;
+}
+
+.left-item div h4:hover {
+    text-decoration: underline 2px;
+}
+  .left-item div a{display: none;}
+  .left-item div:hover  .contain{
+      display: block;
+background-color: hsl(0, 0%, 100%);
+border-radius: 5px;
+position: absolute;
+margin-top: 30px;
+z-index: 3;
+}
+ 
+.left-item div:hover  .contain a{
+      display: block;
+color: rgba(36,36,36,.9);
+padding: 10px 10px;
+margin: 10px 5px;
+}
+.left-item div a:hover{
+    color:black;
+    font-weight:600;
+    font-family:Ubuntu, sans-serif ;
+}
+
+.left-item div #up{
+    visibility: hidden;
+    padding-left: 82px;
+    margin-top: -19px;
+}
+
+.left-item div #down{
+    padding-left: 82px;
+    margin-top: -30px;
+}
+/* #down:hover{
+    display: none  !important;
+}
+/* .left-item div i:hover{
+    visibility: visible  !important;
+} 
+#down:hover #up{
+     display: block; 
+    visibility: visible  !important;
+padding-left: 1px;
+} */
+
+  /* end header */
+.sec2{
+    color: hsl(208, 49%, 24%);
+width: 100%;
+overflow: hidden;
+width: 100%;
+}
+.contain{
+    display: flex;
+   
+position: relative;
+}
+.right{
+    width: 50%;
+    float:right;
+    overflow:hidden;
+    margin-top: 0px;
+}
+.left{
+    width: 50%;
+    padding-top: 75px;
+    margin-bottom: 100px;
+    padding-left: 46px;
+}
+.sec2 h2{
+    text-align: center;
+    padding-top:  130px ;
+    margin-top: 0px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 33px;
+  
+}
+.sec2 .contain .right img{
+    padding-top: -10px;
+    /* float:right; */
+    /* width: 800px; */
+    position: absolute;
+     right: -258px;
+     top: -129px;
+     width: 850px;
+   
+}
+.sec2 .contain .left h3{
+    padding-top:  40px; 
+    padding-bottom: 20px;
+    padding-left: 50px; 
+    padding-right: 100px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.sec2 .contain .left p{
+    padding-top :10px; 
+    padding-bottom: 20px;
+    padding-left: 50px; 
+    padding-right: 100px;
+    font-family: 'Overpass', sans-serif;
+font-weight: 300;
+word-spacing: 2.5px;
+font-size: 16px;
+line-height: 27px;
+}
+
+
+/* end sec2 */
+
+
+
+
+/* start sec3 */
+.sec3{
+    display: flex;
+    height: 56vh;
+    background-color:hsl(237, 17%, 21%);
+    margin-top: 50px;
+    border-bottom-left-radius:  85px ;
+    border-top-right-radius:  85px ;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    /* background-position:left; */
+    background-position: -214px;
+    background-position-y: -570px;
+    position: relative;
+  
+}
+.sec3 .lefts{
+    width: 50%;
+}
+.sec3 .rights{
+    width: 50%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu', sans-serif;
+}
+.sec3 .lefts img{
+   height: 500px;
+    padding-left: 90px;
+    overflow: visible;
+    position: absolute;
+    top: -53px;
+    left: 5px;
+   
+}
+.sec3  .rights h2{
+    padding-top: 96px;
+    padding-bottom: -6px;
+    padding-left: 89px;
+    padding-right: 150px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+.sec3  .rights p{
+    padding-top: 25px;
+    padding-bottom: 13px;
+    padding-left: 86px;
+    padding-right: 150px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    word-spacing: 2.5px;
+    font-size: 16px;
+    line-height: 29px;
+}
+/* end sec3 */
+/* start sec4 */
+.sec4{
+    margin-top: 90px;
+    display: flex;
+position: relative;
+width: 100%;
+overflow: hidden;
+height: 100vh;
+margin-bottom: 120px; 
+}
+.sec4 .l{
+    width: 50%;
+    float: left;
+}
+.sec4 .r{
+    width: 50%;
+    padding-top: 120px;
+}
+.sec4  .r h3{
+    padding-top:  40px; 
+    padding-bottom: 20px;
+    padding-left: 48px; 
+    padding-right: 100px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color:  hsl(208, 49%, 24%);
+}
+.sec4  .r p{
+    padding-top :10px; 
+    padding-bottom: 20px;
+    padding-left: 50px; 
+    padding-right: 100px;
+    font-family: 'Overpass', sans-serif;
+font-weight: 300;
+word-spacing: 2.5px;
+font-size: 17px;
+line-height: 29px;
+color:  hsl(208, 49%, 24%);
+}
+.sec4 .l img{
+    position:absolute;
+    left: -217px;
+    height: 610px;
+    /* width: 770px */
+}
+/* end sec4 */
+
+
+
+/* start foter */
+.foter{
+    height: 40vh;
+    margin-top: 30px;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ padding-top: 75px;
+ background-color: hsl(240, 10%, 16%);
+ border-top-right-radius: 85px ;
+ font-family: 'Overpass', sans-serif;
+ color: hsl(0, 0%, 100%);
+ padding-left: 40px;
+}
+.foter div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   
+}
+.foter div h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: -15px;
+    padding-left: 63px;
+}
+.foter div h4{
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.foter .sec{
+    padding-left: 20px;
+}
+.foter .forth{   
+        padding-right: 335px;
+    } 
+.foter .third{
+        padding-right: 105px;
+        padding-left: 20px;
+    }
+.foter div a{
+    padding-bottom: 10px;
+    font-family: 'Overpass', sans-serif;
+ color: hsl(0, 0%, 100%,.6);
+ text-decoration: none;
+ font-size: 15px;
+}
+.foter div a:hover{
+     text-decoration: underline 2px; 
+    
+    cursor: pointer;
+}
+@media (max-width:375px)
+{
+    .header{
+        width: 375px;
+        height: 100vh;
+        padding-right: 200%;
+        padding-bottom: 190%;
+    }
+    .header .right-item,.header .sec ,.third ,.forth{
+        display: none;
+    }
+    .header h4,.header #up,#down {
+        display: none;
+    }
+    .header .left-item div h2{
+        font-weight: 700;
+    font-size: 72px;
+    margin-top: 15px;
+    margin-left: 100px;
+    }
+    .header .master{
+        margin-right: 100px;
+        margin-left: 100%;
+    }
+}
